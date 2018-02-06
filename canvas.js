@@ -50,7 +50,7 @@ var canvasCallback = function(e){
 	canvasContext.beginPath();
 	canvasContext.arc(x, y, (canvasX+canvasY)/100, 0, 2*Math.PI);
 	canvasContext.fill();
-	//x -= (canvasX+canvasY)/200;
+	canvasContext.moveTo(x, y);//begin line from center of circle
     }
 };
 
